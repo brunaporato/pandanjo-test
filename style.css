@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  --main: #0C1B33;
+  --primria: #7A306C;
+  --bg-color: #FFF;
+}
+
+body {
+  background-color: var(--bg-color);
+
+  padding: 2.375rem 0.75rem 2rem;
+  max-width: 100vw;
+}
+
+#breadcrumb ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+
+  /* margin-left: 10.5rem; */
+
+  a {
+    text-decoration: none;
+    color: var(--main);
+    font-size: 0.75rem;
+  }
+}
+
+#breadcrumb .selected {
+  font-weight: 500;
+  color: var(--primria);
+}
+
+#product-images {
+  margin-top: 1.2rem;
+  display: grid;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#principal-image {
+  text-align: center;
+
+  img {
+    width: 17.25rem;
+    height: 26rem;
+    object-fit: cover;
+  }
+}
+
+#gallery-container {
+  position: relative;
+
+}
+
+#gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+
+  width: 20.18rem;
+}
+
+#thumbnail {
+  width: 6.5rem;
+  height: 10.5rem;
+  cursor: pointer;
+}
+
+.image-selected {
+  border: 3px solid var(--primria);
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+#shadow-gradient {
+  width: 2.5rem;
+  height: 10.5rem;
+
+  background: linear-gradient(270deg, rgba(12, 27, 51, 0.85) -36.04%, rgba(255, 255, 255, 0.00) 98.38%);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
