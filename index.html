@@ -14,7 +14,7 @@
 </head>
 <body>
   <nav id="breadcrumb">
-    <ul>
+    <ul class="flex">
       <li><a href="#">Início</a></li>
       <li>></li>
       <li><a href="#">Feminino</a></li>
@@ -33,7 +33,7 @@
         </div>
         <div id="gallery-container">
           <div id="shadow-gradient"></div>
-          <div id="gallery">
+          <div id="gallery" class="flex">
             <img src="./assets/images/image1.png" alt="Imagem do Produto 1" class="image-selected" id="thumbnail">
             <img src="./assets/images/image2.png" alt="Imagem do Produto 2" id="thumbnail">
             <img src="./assets/images/image3.png" alt="Imagem do Produto 3" id="thumbnail">
@@ -45,8 +45,41 @@
       <div id="product-specs">
         <h2 id="product-title">Vestido Intense Manga Longa</h2>
         <span id="product-ref">Ref: 00000000</span>
+        <div id="rating" class="flex">
+          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+          <img src="./assets/icons/star-void.svg" alt="Ícone de estrela">
+          <a href="#">Ver avaliações</a>
+        </div>
       </div>
-    </section>
+      <div id="product-variants" class="flex">
+        <div id="color">
+          <p>Selecione a cor</p>
+          <div id="color-options" class="flex">
+            <button id="color-blue" class="active" />
+            <button id="color-brown" />
+            <button id="color-purple" />
+          </div>
+        </div>
+        <div id="size" class="flex">
+          <p>Selecione o tamanho</p>
+          <div id="size-options" class="flex">
+            <button>PP</button>
+            <button>P</button>
+            <button class="active">M</button>
+            <button>G</button>
+            <button>GG</button>
+          </div>
+          <a href="#">Ver tabela de tamanhos</a>
+        </div>
+      </div>
+      <p id="product-quantity">
+        Últimos 2 produtos em estoque. Não perca esta chance!
+      </p>
+      </section>
   </main>
 </body>
 </html>

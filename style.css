@@ -10,18 +10,23 @@
   --main: #0C1B33;
   --primria: #7A306C;
   --bg-color: #FFF;
+  --cinza: #9C9C9C;
+  --danger: #E30E41;
+}
+
+.flex {
+  display: flex;
 }
 
 body {
   background-color: var(--bg-color);
 
-  padding: 2.375rem 0.75rem 2rem;
+  padding: 2.375rem 1.25rem 2rem;
   max-width: 100vw;
 }
 
 #breadcrumb ul {
   list-style: none;
-  display: flex;
   gap: 0.5rem;
 
   /* margin-left: 10.5rem; */
@@ -57,15 +62,12 @@ body {
 
 #gallery-container {
   position: relative;
-
+  overflow: hidden;
 }
 
 #gallery {
-  display: flex;
   overflow-x: auto;
-  gap: 0.5rem;
-
-  width: 20.18rem;
+  gap: 1rem;
 }
 
 #thumbnail {
@@ -89,4 +91,114 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+#product-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  margin: 2rem 0;
+
+  > h2 {
+    color: var(--main);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  > span {
+    color: var(--cinza);
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+}
+
+#rating {
+  margin-top: 0.5rem;
+
+  gap: 0.5rem;
+
+  a {
+    font-size: 0.75rem;
+    color: var(--cinza);
+  }
+}
+
+#product-variants {
+  flex-direction: column;
+  gap: 1.5rem;
+
+  p {
+    color: var(--main);
+  }
+}
+
+#color-options {
+  margin-top: 0.75rem;
+
+  gap: 1rem;
+
+  button {
+    width: 2.19rem;
+    height: 2.19rem;
+    border-radius: 999px;
+
+    border: 3px solid transparent;
+  }
+
+  .active {
+    border-color: var(--primria);
+  }
+}
+
+#color-blue {
+  background-color: #014188;
+}
+
+#color-brown {
+  background-color: #9B4D04;
+}
+
+#color-purple {
+  background-color: #811BBF;
+}
+
+#size {
+  flex-direction: column;
+  gap: 0.75rem;
+  
+  a {
+    margin-top: 0.125rem;
+    font-size: 0.75rem;
+    color: var(--cinza);
+  }
+}
+
+#size-options {
+  gap: 0.75rem;
+
+  button {
+    width: 2.19rem;
+    height: 2.19rem;
+
+    background: none;
+    border-radius: 5px;
+    border: 1px solid var(--main);
+
+    color: var(--main);
+    font-weight: 300;
+  }
+
+  .active {
+    border: 3px solid var(--primria);
+    font-weight: 400;
+    color: var(--primria);
+  }
+}
+
+#product-quantity {
+  color: var(--danger);
+  font-size: 0.75rem;
+
+  margin: 1rem 0 2rem;
 }
