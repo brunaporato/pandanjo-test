@@ -32,8 +32,7 @@
   </nav>
 
   <main>
-    <section id="product-infos">
-      <div id="product-images">
+      <section id="product-images">
         <div id="principal-image">
           <img src="./assets/images/image1.png" alt="Imagem do Produto Selecionada">
         </div>
@@ -47,8 +46,8 @@
             <img src="./assets/images/image5.png" alt="Imagem do Produto 5" id="thumbnail">
           </div>
         </div>
-      </div>
-      <div id="product-specs">
+      </section>
+      <section id="product-specs">
         <h2 id="product-title">Vestido Intense Manga Longa</h2>
         <span id="product-ref">Ref: 00000000</span>
         <div id="rating" class="flex">
@@ -60,8 +59,8 @@
           <img src="./assets/icons/star-void.svg" alt="Ícone de estrela">
           <a href="#" class="span-link">Ver avaliações</a>
         </div>
-      </div>
-      <div id="product-variants" class="flex">
+      </section>
+      <section id="product-variants" class="flex">
         <div id="color">
           <p>Selecione a cor</p>
           <div id="color-options" class="flex">
@@ -81,10 +80,30 @@
           </div>
           <a href="#" class="span-link">Ver tabela de tamanhos</a>
         </div>
-      </div>
+      </section>
       <p id="product-quantity">
         Últimos 2 produtos em estoque. Não perca esta chance!
       </p>
+      <section id="product-price" class="flex">
+        <span id="discount-container">
+          10% off
+        </span>
+        <div id="price" class="flex">
+          <span>R$ 97,20</span>
+          <h3>R$ 87,48</h3>
+        </div>
+        <p>Parcelados em até 4x sem juros no cartão</p>
+      </section>
+      <button id="add-cart" class="flex">
+        <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
+        Adicionar ao carrinho
+      </button>
+      <section id="product-shipping">
+        <p>Calcule o prazo e o valor da entrega</p>
+        <div id="cep" class="flex">
+          <input type="number" placeholder="00000-000" maxlength="9" />
+          <button>Calcular</button>
+        </div>
       </section>
   </main>
 </body>
