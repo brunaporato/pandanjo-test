@@ -25,12 +25,33 @@
   color: var(--cinza);
 }
 
+@media (min-width: 950px) {
+  .mobile {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .desktop {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+
 body {
   background-color: var(--bg-color);
 
   padding: 2.375rem 1.25rem 2rem;
   max-width: 100vw;
+  
+  @media (min-width: 950px) {
+    padding: 2rem 6.5rem 5rem;
+  }
 }
+
 
 button, input {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -54,6 +75,10 @@ button {
     color: var(--main);
     font-size: 0.75rem;
   }
+
+  @media (min-width: 950px) {
+    margin-left: 10.5rem;
+  }
 }
 
 #breadcrumb .selected {
@@ -61,11 +86,29 @@ button {
   color: var(--primria);
 }
 
+.web-layout {
+  flex-direction: column;
+
+  @media (min-width: 950px) {
+    flex-direction: row;
+    gap: 3.25rem;
+    justify-content: center;
+  }
+}
+
 #product-images {
   margin-top: 1.2rem;
   display: grid;
   justify-content: center;
   gap: 1.5rem;
+
+  @media (min-width: 950px) {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.75rem;
+  }
 }
 
 #principal-image {
@@ -75,17 +118,35 @@ button {
     width: 17.25rem;
     height: 26rem;
     object-fit: cover;
+
+    @media (min-width: 950px) {
+      width: 28rem;
+      height: 38rem;
+    }
   }
 }
 
 #gallery-container {
   position: relative;
   overflow: hidden;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  @media (min-width: 950px) {
+    overflow-y: auto;
+    height: 38rem;
+  }
 }
 
 #gallery {
   overflow-x: auto;
   gap: 1rem;
+
+  @media (min-width: 950px) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 #thumbnail {
@@ -107,8 +168,18 @@ button {
   background: linear-gradient(270deg, rgba(12, 27, 51, 0.85) -36.04%, rgba(255, 255, 255, 0.00) 98.38%);
 
   position: absolute;
-  top: 0;
-  right: 0;
+  
+  /* TODO: checar se a galery nao fica com espaço ao scrollar */
+  &.mobile {
+    top: 0;
+    right: 0;
+  }
+
+  &.desktop {
+    position: sticky;
+    transform: rotate(90deg);
+    bottom: -4rem;
+  }
 }
 
 #product-specs {
@@ -262,6 +333,12 @@ button {
   border-radius: 5px;
 
   color: var(--light);
+
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: #8d1878;
+  }
 }
 
 .add-cart-button-large {
@@ -325,9 +402,8 @@ button {
   transition: all .2s;
 
   &:hover {
-    background-color: var(--primria);
-    color: var(--light);
-    border-color: transparent;
+    border-color: var(--primria);
+    color: var(--primria);
   }
 }
 
@@ -362,7 +438,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #fast-shipping {
-  display: flex; 
   align-items: center;
   gap: 1rem;
 
@@ -380,11 +455,39 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
+#product-details-desktop {
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin: 5rem 0;
+}
+
+#product-details-heading {
+  gap: 1.5rem;
+
+  button {
+    all: unset;
+    font-size: 1.5rem;
+    color: var(--cinza);
+    border-bottom: 1px solid transparent;
+
+    cursor: pointer;
+
+    &.active {
+      color: var(--primria);
+      border-color: var(--primria);
+    }
+  }
+}
+
 #other-products {
   flex-direction: column;
   gap: 2.25rem;
-}
 
+  @media (min-width: 950px) {
+    gap: 2.5rem;
+  }
+}
 
 #other-products-head {
   flex-direction: column;
@@ -393,6 +496,10 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--main);
   font-size: 1.5rem;
   text-align: center;
+
+  width: fit-content;
+
+  margin: 0 auto;
   
   
   &::before {
@@ -420,6 +527,18 @@ input[type="number"]::-webkit-outer-spin-button {
   gap: 1rem;
 
   overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  @media (min-width: 950px) {
+    width: 100%;
+    justify-content: space-between;
+
+    .slider-button {
+      all: unset;
+      cursor: pointer;
+    }
+  }
 }
 
 .product-card-container {
@@ -436,10 +555,21 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 214px;
   height: 280px;
 
+  overflow: hidden;
+
+  cursor: pointer;
+
   img {
     width: 100%;
     object-fit: cover;
+    
+  transition: transform .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
+
 }
 
 .span-other-product {

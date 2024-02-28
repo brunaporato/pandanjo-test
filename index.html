@@ -17,132 +17,149 @@
     <ul class="flex">
       <li><a href="#">Início</a></li>
       <li>
-        <img src="./assets/icons/arrow-right.svg" alt="Ícone seta à direita">
+        <img src="./assets/icons/arrow-right-small.svg" alt="Ícone seta à direita">
       </li>
       <li><a href="#">Feminino</a></li>
       <li>
-        <img src="./assets/icons/arrow-right.svg" alt="Ícone seta à direita">
+        <img src="./assets/icons/arrow-right-small.svg" alt="Ícone seta à direita">
       </li>
       <li><a href="#">Vestidos</a></li>
       <li>
-        <img src="./assets/icons/arrow-right.svg" alt="Ícone seta à direita">
+        <img src="./assets/icons/arrow-right-small.svg" alt="Ícone seta à direita">
       </li>
       <li><a href="#" class="selected">Ver detalhes</a></li>
     </ul>
   </nav>
 
   <main>
-      <section id="product-images">
-        <div id="principal-image">
-          <img src="./assets/images/image1.png" alt="Imagem do Produto Selecionada">
-        </div>
-        <div id="gallery-container">
-          <div id="shadow-gradient"></div>
-          <div id="gallery" class="flex">
-            <img src="./assets/images/image1.png" alt="Imagem do Produto 1" class="image-selected" id="thumbnail">
-            <img src="./assets/images/image2.png" alt="Imagem do Produto 2" id="thumbnail">
-            <img src="./assets/images/image3.png" alt="Imagem do Produto 3" id="thumbnail">
-            <img src="./assets/images/image4.png" alt="Imagem do Produto 4" id="thumbnail">
-            <img src="./assets/images/image5.png" alt="Imagem do Produto 5" id="thumbnail">
+      <div class="web-layout flex">
+        <section id="product-images">
+          <div id="principal-image">
+            <img src="./assets/images/image1.png" alt="Imagem do Produto Selecionada">
           </div>
-        </div>
-      </section>
-      <section id="product-specs">
-        <h2 id="product-title">Vestido Intense Manga Longa</h2>
-        <span id="product-ref">Ref: 00000000</span>
-        <div id="rating" class="flex">
-          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
-          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
-          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
-          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
-          <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
-          <img src="./assets/icons/star-void.svg" alt="Ícone de estrela">
-          <a href="#" class="span-link">Ver avaliações</a>
-        </div>
-      </section>
-      <section id="product-variants" class="flex">
-        <div id="color">
-          <p>Selecione a cor</p>
-          <div id="color-options" class="flex">
-            <button id="color-blue" class="active" />
-            <button id="color-brown" />
-            <button id="color-purple" />
+          <div id="gallery-container">
+            <div id="shadow-gradient" class="mobile"></div>
+            <div id="gallery" class="flex">
+              <img src="./assets/images/image1.png" alt="Imagem do Produto 1" class="image-selected" id="thumbnail">
+              <img src="./assets/images/image2.png" alt="Imagem do Produto 2" id="thumbnail">
+              <img src="./assets/images/image3.png" alt="Imagem do Produto 3" id="thumbnail">
+              <img src="./assets/images/image4.png" alt="Imagem do Produto 4" id="thumbnail">
+              <img src="./assets/images/image5.png" alt="Imagem do Produto 5" id="thumbnail">
+            </div>
+            <div id="shadow-gradient" class="desktop" />
           </div>
+        </section>
+        <div class="layout-right-side">
+          <section id="product-specs">
+            <h2 id="product-title">Vestido Intense Manga Longa</h2>
+            <span id="product-ref">Ref: 00000000</span>
+            <div id="rating" class="flex">
+              <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+              <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+              <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+              <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+              <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
+              <img src="./assets/icons/star-void.svg" alt="Ícone de estrela">
+              <a href="#" class="span-link">Ver avaliações</a>
+            </div>
+          </section>
+          <section id="product-variants" class="flex">
+            <div id="color">
+              <p>Selecione a cor</p>
+              <div id="color-options" class="flex">
+                <button id="color-blue" class="active" />
+                <button id="color-brown" />
+                <button id="color-purple" />
+              </div>
+            </div>
+            <div id="size" class="flex">
+              <p>Selecione o tamanho</p>
+              <div id="size-options" class="flex">
+                <button id="size-xs">PP</button>
+                <button id="size-sm">P</button>
+                <button id="size-md" class="active">M</button>
+                <button id="size-lg">G</button>
+                <button id="size-xl">GG</button>
+              </div>
+              <a href="#" class="span-link">Ver tabela de tamanhos</a>
+            </div>
+          </section>
+          <p id="product-quantity">
+            Últimos 2 produtos em estoque. Não perca esta chance!
+          </p>
+          <section id="product-price" class="flex">
+            <span id="discount-container">
+              10% off
+            </span>
+            <div id="price" class="flex">
+              <span>R$ 97,20</span>
+              <h3>R$ 87,48</h3>
+            </div>
+            <p>Parcelados em até 4x sem juros no cartão</p>
+          </section>
+          <button class="add-cart-button add-cart-button-large flex">
+            <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
+            Adicionar ao carrinho
+          </button>
+          <section id="product-shipping">
+            <label for="cep-input">Calcule o prazo e o valor da entrega</label>
+            <div id="cep" class="flex">
+              <input id="cep-input" type="number" placeholder="00000-000" maxlength="9" />
+              <button class="outline-button">Calcular</button>
+            </div>
+          </section>
+          <section id="product-info">
+            <div id="details" class="mobile">
+              <div class="product-info-title">
+                <p>Detalhes do Produto</p>
+                <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
+              </div>
+            </div>
+            <div id="features" class="mobile">
+              <div class="product-info-title">
+                <p>Características do Produto</p>
+                <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
+              </div>
+            </div>
+            <div id="payment-options">
+              <div class="product-info-title">
+                <p>Formas de Pagamento</p>
+                <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
+              </div>
+            </div>
+            <div id="exchanges">
+              <div class="product-info-title">
+                <p>Trocas e Devoluções</p>
+                <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
+              </div>
+            </div>
+          </section>
         </div>
-        <div id="size" class="flex">
-          <p>Selecione o tamanho</p>
-          <div id="size-options" class="flex">
-            <button id="size-xs">PP</button>
-            <button id="size-sm">P</button>
-            <button id="size-md" class="active">M</button>
-            <button id="size-lg">G</button>
-            <button id="size-xl">GG</button>
-          </div>
-          <a href="#" class="span-link">Ver tabela de tamanhos</a>
-        </div>
-      </section>
-      <p id="product-quantity">
-        Últimos 2 produtos em estoque. Não perca esta chance!
-      </p>
-      <section id="product-price" class="flex">
-        <span id="discount-container">
-          10% off
-        </span>
-        <div id="price" class="flex">
-          <span>R$ 97,20</span>
-          <h3>R$ 87,48</h3>
-        </div>
-        <p>Parcelados em até 4x sem juros no cartão</p>
-      </section>
-      <button class="add-cart-button add-cart-button-large flex">
-        <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
-        Adicionar ao carrinho
-      </button>
-      <section id="product-shipping">
-        <label for="cep-input">Calcule o prazo e o valor da entrega</label>
-        <div id="cep" class="flex">
-          <input id="cep-input" type="number" placeholder="00000-000" maxlength="9" />
-          <button class="outline-button">Calcular</button>
-        </div>
-      </section>
-      <section id="product-info">
-        <div id="details">
-          <div class="product-info-title">
-            <p>Detalhes do Produto</p>
-            <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
-          </div>
-        </div>
-        <div id="features">
-          <div class="product-info-title">
-            <p>Características do Produto</p>
-            <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
-          </div>
-        </div>
-        <div id="payment-options">
-          <div class="product-info-title">
-            <p>Formas de Pagamento</p>
-            <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
-          </div>
-        </div>
-        <div id="exchanges">
-          <div class="product-info-title">
-            <p>Trocas e Devoluções</p>
-            <img src="./assets/icons/arrow-down.svg" alt="Ícone seta para baixo">
-          </div>
-        </div>
-      </section>
-      <section id="fast-shipping">
+      </div>
+      <section id="fast-shipping" class="flex mobile">
         <img src="./assets/icons/shipping-truck.svg" alt="Ícone de caminhão">
         <div id="text">
           <p>Entrega rápida</p>
           <span>Enviamos para todo o Brasil</span>
         </div>
       </section>
+      <section id="product-details-desktop" class="flex desktop">
+        <div id="product-details-heading" class="flex">
+          <button class="active">Detalhes do Produto</button>
+          <button class="">Características do Produto</button>
+        </div>
+        <p>
+          O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual. Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional. O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais. Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.
+        </p>
+      </section>
       <section id="other-products" class="flex">
         <p id="other-products-head" class="flex">
           Produtos que você também pode gostar
         </p>
         <div id="other-products-container" class="flex">
+          <button class="slider-button desktop">
+            <img src="./assets/icons/arrow-left-large.svg" alt="">
+          </button>
           <div class="product-card-container flex">
             <div class="product-card">
               <div class="product-card-image">
@@ -160,7 +177,7 @@
                 <p class="other-product-price">R$ 140,70</p>
               </div>
             </div>
-            <div class="product-buttons flex">
+            <div class="product-buttons flex mobile">
               <button class="add-cart-button add-cart-button-small flex">
                 <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
                 Adicionar ao carrinho
@@ -187,7 +204,7 @@
                 <p class="other-product-price">R$ 118,50</p>
               </div>
             </div>
-            <div class="product-buttons flex">
+            <div class="product-buttons flex mobile">
               <button class="add-cart-button add-cart-button-small flex">
                 <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
                 Adicionar ao carrinho
@@ -214,7 +231,7 @@
                 <p class="other-product-price">R$ 136,80</p>
               </div>
             </div>
-            <div class="product-buttons flex">
+            <div class="product-buttons flex mobile">
               <button class="add-cart-button add-cart-button-small flex">
                 <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
                 Adicionar ao carrinho
@@ -241,7 +258,7 @@
                 <p class="other-product-price">R$ 93,84</p>
               </div>
             </div>
-            <div class="product-buttons flex">
+            <div class="product-buttons flex mobile">
               <button class="add-cart-button add-cart-button-small flex">
                 <img src="./assets/icons/shopping-cart.svg" alt="Ícone de carrinho de compras">
                 Adicionar ao carrinho
@@ -251,6 +268,9 @@
               </button>
             </div>
           </div>
+          <button class="slider-button desktop">
+            <img src="./assets/icons/arrow-right-large.svg" alt="">
+          </button>
         </div>
       </section>
   </main>
