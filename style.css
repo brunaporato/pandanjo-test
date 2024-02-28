@@ -327,3 +327,45 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+#product-info {
+  margin-top: 2.5rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-info-title {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid var(--cinza);
+
+  cursor: pointer;
+
+  > p {
+    color: var(--main);
+  }
+}
+
+#fast-shipping {
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+
+  margin: 4rem auto;
+  width: fit-content;
+
+  p {
+    color: var(--main);
+    font-weight: 500;
+  }
+
+  span {
+    color: var(--main);
+    font-size: 0.75rem;
+  }
+}
