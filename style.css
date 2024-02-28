@@ -271,7 +271,7 @@ button {
 }
 
 #product-shipping {
-  > p {
+  > label {
     font-size: 0.75rem;
     color: var(--main);
     margin-bottom: 0.5rem;
@@ -316,6 +316,7 @@ button {
     &:hover {
       background-color: var(--primria);
       color: var(--light);
+      border-color: transparent;
     }
   }
 }
