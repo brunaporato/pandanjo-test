@@ -119,11 +119,22 @@ button {
 
 #principal-image {
   text-align: center;
+  
+  overflow: hidden;
+  height: 26rem;
+
+  @media (min-width: 950px) {
+    height: 38rem;
+  }
 
   img {
     width: 17.25rem;
     height: 26rem;
     object-fit: cover;
+
+    &:hover {
+      cursor: zoom-in;
+    }
 
     @media (min-width: 950px) {
       width: 28rem;

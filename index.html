@@ -11,8 +11,6 @@
   <title>Pandanjo</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <script type="module" src="./src/main.js"></script>
 </head>
 <body>
   <nav id="breadcrumb">
@@ -62,7 +60,7 @@
               <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
               <img src="./assets/icons/star-filled.svg" alt="Ícone de estrela">
               <img src="./assets/icons/star-void.svg" alt="Ícone de estrela">
-              <a href="#" class="span-link">Ver avaliações</a>
+              <a href="" class="span-link" id="see-rating">Ver avaliações</a>
             </div>
           </section>
           <section id="product-variants" class="flex">
@@ -183,8 +181,8 @@
         <p id="other-products-head" class="flex">
           Produtos que você também pode gostar
         </p>
-        <div id="other-products-container" class="flex">
-          <button class="slider-button desktop prev">
+        <div id="other-products-container" class="flex slider-wrapper">
+          <button class="slider-button desktop">
             <img src="./assets/icons/arrow-left-large.svg" alt="">
           </button>
           <div class="product-card-container flex">
@@ -295,11 +293,12 @@
               </button>
             </div>
           </div>
-          <button class="slider-button desktop next">
+          <button class="slider-button desktop">
             <img src="./assets/icons/arrow-right-large.svg" alt="">
           </button>
         </div>
       </section>
   </main>
 </body>
+<script type="module" src="./src/main.js"></script>
 </html>
