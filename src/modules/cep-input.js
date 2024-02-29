@@ -10,6 +10,13 @@ export function handleCepInput() {
 
   calculateButton.addEventListener('click', function(event) {
     event.preventDefault()
-    alert(`O pedido para o CEP ${cepInput.value} chegará em breve.`)
+
+    console.log(cepInput.value.length)
+
+    if (cepInput.value.length < 8) {
+      return alert('Insira um CEP válido.')
+    }
+    
+    alert(`O pedido para o CEP ${cepInput.value} chegará em 4 dias.`)
   })
 }
