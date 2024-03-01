@@ -15,16 +15,16 @@ Algumas funcionalidades que você vai encontrar ao navegar pela página:
 - Input verificando se o <strong>CEP</strong> tem a quantidade correta de dígitos
 - <strong>Toggle no container</strong> das informações disponibilizadas ao clicar.
 
-## Acesso
+## 💻 Acesso
 Há duas opções de acesso ao projeto:
-#### Online: </br>
-  Acesse pelo github pages <a href="https://github.com/brunaporato/pandanjo-test" target="_blank">clicando aqui</a>
+#### 🛜 Online: </br>
+  Acesse pelo github pages <a href="https://brunaporato.github.io/pandanjo-test/" target="_blank">clicando aqui</a>
 
-#### Localmente
+#### 🏡 Localmente:
 Para rodar o projeto localmente siga os passos:
 1. Clone este repositório
 ```bash
-  >> git clone https://github.com/brunaporato/pandanjo-test
+  >> git clone https://github.com/brunaporato/pandanjo-test.git
 ```
 
 2. Abra a pasta do repositório e acesse o código utilizando VSCode
@@ -38,7 +38,7 @@ Para rodar o projeto localmente siga os passos:
 >> live-server index.html
 ```
 
-## Observações
+## 🔎 Observações
 O desafio foi extremamente interessante, especialmente pela oportunidade de me reconectar com a codificação em HTML, CSS e JS Vanilla após ficar muito tempo utilizando frameworks, relembrar a base é sempre muito importante e divertido. Ter uma base sólida é o caminho para o sucesso independente da linguagem. </br>
 Eu gostei muito do processo e fiquei satisfeita com o resultado final, e espero que vocês também apreciem o que foi desenvolvido. </br>
 <small>Até mais 💜</small>
