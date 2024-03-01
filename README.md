@@ -10,9 +10,10 @@ O projeto é uma página de e-commerce responsiva desenvolvida de acordo com o l
 - JavaScript
 
 Algumas funcionalidades que você vai encontrar ao navegar pela página:
-- <strong>Zoom</strong> ao passar o mouse sobre a imagem
-- Selecionar diferentes <strong>variantes</strong> do produto
-- Input verificando se o <strong>CEP</strong> tem a quantidade correta de dígitos
+- <strong>Zoom</strong> ao passar o mouse sobre a imagem.
+- Selecionar diferentes <strong>variantes</strong> do produto.
+- <strong>Slider/carrossel</strong> de produtos no fim da página.
+- Input verificando se o <strong>CEP</strong> tem a quantidade correta de dígitos.
 - <strong>Toggle no container</strong> das informações disponibilizadas ao clicar.
 
 ## 💻 Acesso
